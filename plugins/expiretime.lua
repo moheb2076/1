@@ -14,7 +14,7 @@ local function pre_process(msg)
 	end
 	if tonumber(timetoexpire) == 0 then
 		if redis:hget('expires0',msg.chat_id_) then end
-		tdcli.sendMessage(msg.chat_id_, 0, 1, '*⚠️مدت استفاده ربات شما تمام شده است لطفا آن را تمدید کنید*.', 1, 'md')
+		tdcli.sendMessage(msg.chat_id_, 0, 1, '*'شارژ این گروه به اتمام رسید و ربات در گروه غیر فعال شد...\nبرای تمدید کردن ربات به @abd2076 پیام دهید.\nدر صورت ریپورت بودن میتوانید با ربات زیر با ما در ارتباط باشید:\n@Antispamseed_bot'*.', 1, 'md')
 		redis:hset('expires0',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 1 then
