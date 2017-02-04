@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456789 -- Put Here Your Bot ID
+our_id = 276677340 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -85,25 +85,22 @@ function create_config( )
     "expiretime",
     "mute-time",
     "del",
-	"lock-fosh"
+    "lock-fosh"
  },
-    sudo_users = {123456789},
+    sudo_users = {127952353},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》permag.ir v3
+    info_text = [[》diamond
 
 🔰Our channel :
-》@permag_bots《
+》@ap576《
 
-🔰Our channel2 :
-》@permag_ir《
+🔰Our username :
+》@abd2076《
 
-🔰Our channel3 :
-》@permag《
-
-🔰Our website :
-》http://permag.ir
+🔰Our payamrasan :
+》@Antispamseed_bot《
 ]],
   }
   serialize_to_file(config, './data/config.lua')
